@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".results"
+    android:id="@+id/makePhotoOf">
+
+
+    <ImageView
+        android:id="@+id/congratulationicon"
+        android:layout_width="360dp"
+
+        android:layout_height="186dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/congrat" />
+
+    <TextView
+        android:id="@+id/successTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulationicon"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="You have completed the Quiz"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/successTextview"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/correctanswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Made 0 Correct answers"
+            android:textColor="#00C853"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/incorrectanswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Made 0 Incorrect answers"
+            android:textColor="#DD2C00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startnewquizbtn"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="START NEW QUIZ? "
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_below="@id/startnewquizbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="QUIT"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="SHARE SCORE"
+        android:textSize="30sp"/>
+
+
+</RelativeLayout>
